@@ -1,0 +1,107 @@
+{
+  "_args": [
+    [
+      "github:zombierabbit/react-native-material-kit",
+      "/Users/ezuccon/Proyectos/ReactNative/btrader/btp-mobile"
+    ]
+  ],
+  "_from": "github:zombierabbit/react-native-material-kit",
+  "_id": "react-native-material-kit@github:zombierabbit/react-native-material-kit#1cd33a598c77416c206d3aedc1c2a9661b73163c",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/react-native-material-kit",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "github:zombierabbit/react-native-material-kit",
+    "rawSpec": "github:zombierabbit/react-native-material-kit",
+    "saveSpec": "github:zombierabbit/react-native-material-kit",
+    "fetchSpec": null,
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "github:zombierabbit/react-native-material-kit#1cd33a598c77416c206d3aedc1c2a9661b73163c",
+  "_spec": "github:zombierabbit/react-native-material-kit",
+  "_where": "/Users/ezuccon/Proyectos/ReactNative/btrader/btp-mobile",
+  "author": {
+    "name": "Yingxin Wu",
+    "email": "yingxinwu.g@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/zombierabbit/react-native-material-kit/issues"
+  },
+  "contributors": [
+    {
+      "name": "Quentin Valmori",
+      "url": "https://github.com/Crash--"
+    },
+    {
+      "name": "Alexander Price",
+      "url": "https://github.com/alexprice91"
+    }
+  ],
+  "dependencies": {
+    "ramda": "^0.25.0"
+  },
+  "description": "Bringing Material Design to React Native",
+  "devDependencies": {
+    "@microsoft/api-documenter": "^7.3.11",
+    "@microsoft/api-extractor": "^7.3.4",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "@types/jest": "^24.0.16",
+    "@types/ramda": "^0.25.40",
+    "@types/react-native": "^0.57.7",
+    "@types/react-test-renderer": "^16.8.3",
+    "babel-eslint": "^9.0.0",
+    "babel-jest": "^24.8.0",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "jest": "^24.8.0",
+    "react-native-typescript-transformer": "^1.2.10",
+    "react-test-renderer": "^16.8.6",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.1.3"
+  },
+  "homepage": "https://github.com/zombierabbit/react-native-material-kit",
+  "keywords": [
+    "react",
+    "native",
+    "react-component",
+    "react-native",
+    "react-native-component",
+    "ios",
+    "android",
+    "material design",
+    "MaterialKit"
+  ],
+  "license": "MIT",
+  "main": "src/index.ts",
+  "name": "react-native-material-kit",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": ">=0.50.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zombierabbit/react-native-material-kit.git"
+  },
+  "scripts": {
+    "api-md": "api-documenter markdown --input-folder temp --output-folder docs",
+    "build": "yarn lint && tsc",
+    "build-docs": "yarn clean && yarn setup && yarn build && api-extractor run --local --verbose && yarn api-md",
+    "clean": "rm -rf lib temp etc dist docs",
+    "lint": "tslint -p .",
+    "setup": "mkdir temp etc dist docs",
+    "test": "jest"
+  },
+  "typings": "lib/react-native-material-kit.d.ts",
+  "version": "0.5.1"
+}
